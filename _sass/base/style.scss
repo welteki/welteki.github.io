@@ -1,0 +1,173 @@
+//--------------------
+// Colors
+//--------------------
+
+$primary-color: #FFFFFF;
+$primary-color-dark: #333333;
+$secondary-color: #F2F2F2;
+
+$accent-color: #E7BA31;
+
+//--------------------
+// Text colors
+//--------------------
+
+$primary-text: #828282;
+$text-light: #BDBDBD;
+$text-dark: #333333;
+
+$text-accent: $accent-color;
+
+//--------------------
+// Typography
+//--------------------
+
+$primary-font: 'Roboto Condensed', sans-serif;
+$secondary-font: 'PT Sans', sans-serif;
+
+//--------------------
+// General styles
+//--------------------
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  font-family: $primary-font;
+}
+
+h1 {
+  color: $text-dark;
+}
+
+p {
+  color: $primary-text;
+}
+
+h2 {
+  color: $text-accent;
+  font-family: $secondary-font;
+  font-size: 10px;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  list-style-type: none;
+}
+
+a {
+
+}
+
+a[type="alt"] {
+  text-decoration: none;
+  cursor: default;
+}
+
+hr {
+  background-color: $text-light;
+  height: 1px;
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 800px;
+}
+
+//--------------------
+// Component styles
+//--------------------
+
+.icon-social {
+  height: 100%;
+  fill: $accent-color;
+  transition-delay: 0.1s;
+
+  &:hover {
+    fill: $primary-color-dark;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60px;
+  height: 16px;
+
+  // fix displaying properly in safari
+  li {
+    height: inherit;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  margin-right: 43px;
+
+  a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: $primary-font;
+    font-size: 13px;
+    font-weight: 600;
+    color: $text-light;
+    text-decoration: none;
+    transition-delay: 0.1s;
+
+    &:hover {
+      color: $text-dark;
+    }
+  }
+}
+
+.icon-arrow {
+  height: 100%;
+  fill: $accent-color;
+  &:hover {
+
+  }
+}
+
+.btn {
+  display: flex;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  height: 9px;
+  font-family: $secondary-font;
+  font-size: 9px;
+  font-weight: 600;
+  color: $text-accent;
+
+    &:hover {
+      color: $text-dark;
+
+      .icon-arrow {
+        fill: $primary-color-dark;
+      }
+    }
+
+  // display properly in safari
+  span {
+    height: inherit;
+  }
+}
+
+.arrow-right {
+  margin-left: 4px;
+}
+
+.arrow-left {
+  margin-right: 4px;
+}
