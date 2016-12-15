@@ -1,0 +1,35 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+
+  .social {
+    margin-top: 3px;
+    height: 14px;
+    width: 54px;
+  }
+
+  .nav {
+    width: 110px;
+  }
+}
+
+.license {
+  align-self: center;
+  width: 58%;
+  font-family: $primary-font;
+  font-size: 12px;
+  text-align: center;
+  color: $text-light;
+
+  a {
+    color: inherit;
+  }
+}
