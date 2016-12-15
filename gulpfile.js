@@ -32,7 +32,7 @@ gulp.task('prefix', () => {
 // watch file's for changes
 gulp.task('watch', () => {
     gulp.watch(['_sass/**/*.scss','_sass/*.scss'], ['prefix']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_includes/**/*.html' ], ['jekyll-rebuild']);
 });
 
 // rebuild site and reload page
