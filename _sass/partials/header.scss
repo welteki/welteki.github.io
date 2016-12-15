@@ -1,0 +1,28 @@
+.page-header {
+  padding-top: 30px;
+  padding-bottom: 58px;
+  padding-left: 111px;
+  padding-right: 111px;
+  background-color: $secondary-color;
+
+  hr {
+    float: right;
+    margin-top: 7px;
+    width: 60%;
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: $text-accent;
+
+  &:hover {
+    color: $text-dark;
+  }
+}
