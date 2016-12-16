@@ -30,7 +30,7 @@ then
   git checkout release
   git merge --no-ff develop
   git checkout develop
-elif [ $CURRENT_BRANCH == "release"]
+elif [ $CURRENT_BRANCH == "release" ]
 then
   git checkout develop
   git merge --no-ff release
